@@ -164,3 +164,32 @@ let NUM=[33,44,5,676,33]
 NUM.forEach(function myFunction(values){
     console.log(values)
 })
+
+//filter
+var Numb = [22,33,44,55,66]
+console.log(Numb.filter(n => n%2==0))
+
+//set
+let jo = new Set("Book Store");
+console.log(jo)
+jo.add(5)   // adding elements
+jo.add("five")
+jo.add(75)
+jo.add("one")
+console.log(jo)
+let so =jo.forEach(val=>{     // using for each
+    console.log(val)
+})
+console.log(jo.has(5)); //value is present or not 
+console.log(jo.has(576))
+ // map
+ var map = new Map()
+ map.set ("gen","i7")
+ map.set ("Brand","hp")
+ map.set ("storage","ssd")
+ map.set ("gen","i3") // it is updating the value
+ console.log(map.keys())
+ console.log(map.has("gen")) // if value is entered it shows false
+ for (let [x,y] of map)(
+    console.log(x + " : "+ y)
+ )

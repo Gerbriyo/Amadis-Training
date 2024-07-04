@@ -1,0 +1,92 @@
+<!-- no value inside html -->
+<h1 id="yes">
+   
+</h1>
+
+<script>
+let value = document.getElementById("yes")
+value.innerHTML="Hi Everyone"
+console.log(value.innerHTML)
+
+ </script>
+
+<!-- value inside html and change it -->
+<h1 id="hi">
+    <p>There are many generations in the segment of laptops </p>
+</h1>
+
+<script>
+    let demo=document.getElementById("hi")
+    console.log(demo.textContent)
+    demo.textContent="There are many generations in the segment of laptops and computers"
+    console.log(demo.textContent)
+</script>
+
+<!-- using tagname -->
+    <p id="hello">There are many generations in the segment of laptops </p>
+
+<script>
+    let va=document.getElementsByTagName("p")
+    for(let i = 0; i < va.length; i++) {
+    console.log(va[i].innerHTML);
+}
+</script>
+
+<!-- using class -->
+<h1 class="into">There are boxes</h1>
+<h1 class="into">There are bags</h1>
+<h1 class="into">There are books</h1>
+
+<script>
+    let none=document.getElementsByClassName("into")
+    for(let i = 0; i < none.length; i++) {
+        console.log(none[i].textContent);
+    }
+</script>
+
+<p class="gone">1</p>
+<p class="go">there are many books in the store</p>
+<script>
+    let buy=document.querySelectorAll(".gone")
+    console.log(buy[0].innerHTML)
+    let out=document.querySelector(".go")
+    console.log(out.innerHTML)
+</script>
+
+<h1 id="11">Hi everyone!!</h1>
+    
+    <button onclick="Click_Me()">Click </button>
+<script>
+    let VALUE = document.getElementById("11")
+    console.log(VALUE.innerHTML)
+    function Click_Me(){
+        VALUE.innerHTML="BYE to You"
+    }
+</script>
+ <!-- without function -->
+<h1 id="12">Hiii everyone!!</h1> 
+    <button onclick='document.getElementById("12").innerHTML="Abish"'>Click </button>
+
+<!-- Adding two numbers -->
+<h1>Using input</h1>
+<input id="Number 1"> 
+<input id="Number 2"> 
+<button onclick="addition()">Click Me</button>
+<p id="result">Result</p>
+
+<script>
+    let box1=document.getElementById("Number 1")
+    let box2=document.getElementById("Number 2")
+    let output=document.getElementById("result")
+    function addition(){
+        let box1val= Number(box1.value)
+        let box2val= Number(box2.value)
+    let total =box1val+box2val
+    output.innerHTML=total
+    }
+</script>
+
+<!-- Events -->
+<h1 onmouseover="style.color='red'" onmouseout="style.color='blue'" >
+    There are the people in the city
+</h1>

@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../Image/Backgroung\ image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.543);
+    -webkit-text-stroke: 1px rgb(1, 55, 125);
+}
+
+.game-container {
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid rgb(0, 200, 255);
+    padding: 20px;
+    background-color: rgba(128, 125, 130, 0.11);
+    position: relative;
+    border-radius: 80px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score {
+    margin: 0 20px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.choice {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.choice img {
+    width: 200px;
+    height: 200px;
+}
+
+.result h2 {
+    margin: 20px 0;
+    font-size: 45px;
+    text-align: center;
+}
+
+#winner-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: #ff5722;
+    color: white;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}

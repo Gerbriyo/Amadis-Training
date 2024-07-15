@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('./5.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.heading {
+  font-family: 'Times New Roman', Times, serif; /* Use 'Raleway' as an alternative */
+  font-weight: 700;
+  color: #00d1ff; /* Light blue color */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle shadow */
+}
+
+.duration-label {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.duration-label select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.content-box {
+  text-align: center;
+  background: rgba(52, 59, 142, 0);
+  font-size: x-large;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.typing-text {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.result-details {
+  list-style: none;
+  padding: 0;
+}
+
+.result-details li {
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box {
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+span.correct {
+  color: green;
+}
+
+span.incorrect {
+  color: red;
+}
+
+span.active {
+  text-decoration: underline;
+}
+
+
